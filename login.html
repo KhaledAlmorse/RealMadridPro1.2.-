@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="./css/login.css">
+	<script defer src="./js/login.js"></script>
+</head>
+
+<body>
+
+
+
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+		<div class="signup">
+			<form id="signup-form" onsubmit="test3(event)">
+				<label for="chk" aria-hidden="true">Sign up</label>
+				<div class="cont">
+					<input type="text" name="username" placeholder="User name" id="signup-username">
+					<span class="error" id="span6" style="color: red;"></span>
+				</div>
+
+				<div class="cont">
+					<input type="email" name="email" placeholder="Email" id="signup-email">
+					<span class="error" id="span8" style="color: red;"></span>
+				</div>
+
+				<div class="cont">
+					<input type="password" name="password" placeholder="Password" id="signup-password">
+					<span class="error" id="span11" style="color: red;"></span>
+				</div>
+
+				<button type="button" id="signup-button" onclick="Validation3()">Sign up</button>
+				<div id="signup-error" class="error-message"></div>
+			</form>
+		</div>
+		<div class="login">
+			<form id="login-form" onsubmit="test4(event)">
+				<label for="chk" aria-hidden="true">Login</label>
+				<div class="cont">
+					<input type="email" name="email" placeholder="Email" id="login-email">
+					<span class="error" id="span14" style="color: red;"></span>
+				</div>
+				<div class="cont">
+					<input type="password" name="password" placeholder="Password" id="login-password">
+					<span class="error" id="span15" style="color: red;"></span>
+				</div>
+				<button type="button" id="login-button" onclick="Validation4()">Login</button>
+				<div id="login-error" class="error-message"></div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>
